@@ -1,0 +1,139 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const stackRow1 = [
+    { name: "Golang", icon: "skill-icons:golang", tag: "PRIMARY" },
+    { name: "TypeScript", icon: "skill-icons:typescript", tag: "PRIMARY" },
+    { name: "Rust", icon: "skill-icons:rust", tag: "SIDE" },
+    { name: "C / C++", icon: "skill-icons:cpp", tag: "CORE" },
+    { name: "Docker", icon: "skill-icons:docker", tag: "INFRA" },
+    { name: "PostgreSQL", icon: "skill-icons:postgresql-dark", tag: "DATABASE" },
+    { name: "MongoDB", icon: "skill-icons:mongodb", tag: "NOSQL" },
+    { name: "Linux", icon: "skill-icons:linux-dark", tag: "OS" },
+    { name: "AWS", icon: "skill-icons:aws-dark", tag: "CLOUD" },
+];
+
+const stackRow2 = [
+    { name: "Bun", icon: "skill-icons:bun-dark", tag: "RUNTIME" },
+    { name: "Node.js", icon: "skill-icons:nodejs-dark", tag: "RUNTIME" },
+    { name: "Next.js", icon: "skill-icons:nextjs-dark", tag: "FRAMEWORK" },
+    { name: "Astro", icon: "skill-icons:astro", tag: "SSG" },
+    { name: "Elysia.js", icon: "skill-icons:elysia-dark", tag: "FRAMEWORK" },
+    { name: "Hono.js", icon: "logos:hono", tag: "EDGE FW" },
+    { name: "Tailwind", icon: "skill-icons:tailwindcss-dark", tag: "CSS" },
+    { name: "Git & GitHub", icon: "skill-icons:github-dark", tag: "VCS" },
+];
+
+const row1 = [...stackRow1, ...stackRow1];
+const row2 = [...stackRow2, ...stackRow2];
+---
+
+<section
+    id="skills"
+    class="py-16 md:py-24 bg-[#FAFAFA] border-t-2 border-gray-950 overflow-hidden relative"
+>
+    <div class="max-w-[98%] xl:max-w-[1500px] 2xl:max-w-[1700px] mx-auto px-2 sm:px-6 relative z-10">
+
+        <!-- MAIN POSTER FRAME CONTAINER -->
+        <div data-reveal class="neo-parallax-card relative w-full bg-white border-2 border-gray-950 shadow-[12px_12px_0px_0px_rgba(0,0,0,0.95)] p-5 sm:p-8 md:p-12 flex flex-col justify-between overflow-hidden noise-overlay">
+
+            <!-- TOP HEADER GRID METADATA BAR -->
+            <div class="-mx-5 sm:-mx-8 md:-mx-12 px-5 sm:px-8 md:px-12 pb-3 sm:pb-6 border-b-2 border-gray-950 flex flex-row justify-between items-center gap-2 sm:gap-4 font-mono text-xs uppercase font-black text-gray-950">
+                <div class="flex items-center gap-2">
+                    <span class="bg-gray-950 text-white px-2 sm:px-2.5 py-1 border border-gray-950 font-mono text-[9.5px] sm:text-xs font-black shadow-[1.5px_1.5px_0px_0px_rgba(0,0,0,1)] sm:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                        003 // TECH ARSENAL
+                    </span>
+                </div>
+
+                <div class="text-right">
+                    <span class="bg-[#FACC15] text-gray-950 border border-gray-950 px-2 sm:px-2.5 py-1 text-[8px] sm:text-[9.5px] font-black uppercase shadow-[1.5px_1.5px_0px_0px_rgba(0,0,0,1)] sm:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rotate-1 inline-block">
+                        LANGUAGES & RUNTIMES
+                    </span>
+                </div>
+            </div>
+
+            <!-- TITLE & MARQUEE SECTION WITH Y2K GEMINI SPARKLES -->
+            <div class="w-full my-6 sm:my-10 space-y-6 relative">
+
+                <!-- FLOATING GEMINI SPARKLES -->
+                <svg class="sparkle absolute -top-4 right-10 w-6 h-6 text-[#FF4D8D]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0c.9 6.4 3.6 9.1 12 12-8.4 2.9-11.1 5.6-12 12-.9-6.4-3.6-9.1-12-12C8.4 9.1 11.1 6.4 12 0z"/>
+                </svg>
+                <svg class="sparkle absolute top-1/2 -left-4 w-5 h-5 text-[#0038FF]" style="animation-delay:-0.7s" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0c.9 6.4 3.6 9.1 12 12-8.4 2.9-11.1 5.6-12 12-.9-6.4-3.6-9.1-12-12C8.4 9.1 11.1 6.4 12 0z"/>
+                </svg>
+                <svg class="sparkle absolute -bottom-4 right-1/4 w-5 h-5 text-[#FACC15]" style="animation-delay:-1.2s" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0c.9 6.4 3.6 9.1 12 12-8.4 2.9-11.1 5.6-12 12-.9-6.4-3.6-9.1-12-12C8.4 9.1 11.1 6.4 12 0z"/>
+                </svg>
+
+                <!-- SECTION TITLE WITH NEON PULSE GLITCH -->
+                <div>
+                    <h2 class="font-oswald text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-gray-950 leading-none inline-block">
+                        TECH STACK<span class="text-[#0038FF]">.</span>
+                    </h2>
+                    <p class="font-mono text-xs sm:text-sm text-gray-600 font-medium mt-2">
+                        Tech stack yang sedang dipelajari
+                    </p>
+                </div>
+
+                <!-- FREELY FLOATING MARQUEE STREAMS (INNER GRID BOX REMOVED) -->
+                <div class="w-full space-y-4 sm:space-y-5 py-2 overflow-hidden">
+
+                    <!-- MARQUEE ROW 1 (SCROLLING LEFT) -->
+                    <div class="w-full flex whitespace-nowrap py-1.5 sm:py-2 marquee-row">
+                        <div class="flex items-center gap-4 md:gap-6 pr-4 md:pr-6 w-max animate-marquee-left">
+                            {
+                                row1.map((item) => (
+                                    <div class="flex-shrink-0 flex items-center gap-3 bg-white border-2 border-gray-950 px-4 sm:px-5 py-2 sm:py-2.5 rounded-2xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:border-[#0038FF] hover:shadow-[5px_5px_0px_0px_rgba(0,56,255,1)] hover:-translate-y-1 transition-all cursor-pointer group">
+                                        <Icon
+                                            name={item.icon}
+                                            class="w-6 h-6 md:w-7 md:h-7 grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-300"
+                                        />
+                                        <span class="font-oswald text-lg md:text-xl font-bold uppercase tracking-tight text-gray-950 group-hover:text-[#0038FF] transition-colors">
+                                            {item.name}
+                                        </span>
+                                        <span class="font-mono text-[8.5px] sm:text-[9px] text-[#FF5500] font-extrabold border-l-2 border-gray-950 pl-2.5 ml-1">
+                                            {item.tag}
+                                        </span>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+
+                    <!-- MARQUEE ROW 2 (SCROLLING RIGHT) -->
+                    <div class="w-full flex whitespace-nowrap py-1.5 sm:py-2 marquee-row">
+                        <div class="flex items-center gap-4 md:gap-6 pr-4 md:pr-6 w-max animate-marquee-right">
+                            {
+                                row2.map((item) => (
+                                    <div class="flex-shrink-0 flex items-center gap-3 bg-gray-950 border-2 border-gray-950 px-4 sm:px-5 py-2 sm:py-2.5 rounded-2xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:border-[#FF5500] hover:shadow-[5px_5px_0px_0px_rgba(255,85,0,1)] hover:-translate-y-1 transition-all cursor-pointer group">
+                                        <Icon
+                                            name={item.icon}
+                                            class="w-6 h-6 md:w-7 md:h-7 grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-300"
+                                        />
+                                        <span class="font-oswald text-xl md:text-2xl font-bold uppercase tracking-tight text-white group-hover:text-[#FF5500] transition-colors">
+                                            {item.name}
+                                        </span>
+                                        <span class="font-mono text-[8.5px] sm:text-[9px] text-[#0038FF] font-extrabold border-l-2 border-gray-700 pl-2.5 ml-1">
+                                            {item.tag}
+                                        </span>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- BOTTOM METADATA BAR -->
+            <div class="-mx-5 sm:-mx-8 md:-mx-12 px-5 sm:px-8 md:px-12 pt-4 border-t-2 border-gray-950 flex flex-col sm:flex-row justify-between items-center gap-4 font-mono text-[10px] sm:text-xs font-black uppercase text-gray-950">
+                <span class="bg-gray-950 text-white px-2.5 py-0.5 border border-gray-950">003 // TECH ARSENAL</span>
+                <span>PRIMARY: GOLANG & TYPESCRIPT</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>

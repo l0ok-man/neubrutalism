@@ -1,0 +1,74 @@
+---
+// src/components/PetTerrarium.astro
+---
+
+<div
+    class="mt-8 border border-gray-200 p-2 group hover:border-ryo-blue transition-colors bg-white reveal"
+>
+    <p
+        class="font-mono text-[9px] md:text-[10px] text-gray-400 uppercase tracking-widest mb-2 px-1"
+    >
+        Pet Terrarium
+    </p>
+
+    <pet-terrarium>
+        <div
+            id="pet-terrarium-container"
+            class="relative overflow-hidden bg-[#2D2D2D] h-48 md:h-64 w-full rounded"
+            style="background-image: url('/pets/background_castle.png'); background-size: cover; background-position: bottom; image-rendering: pixelated; touch-action: none;"
+        >
+            <div
+                class="pet-container group"
+                data-speed="40"
+                data-direction="-1"
+            >
+                <div class="speech-bubble">Yip yip!</div>
+                <span class="pet-name">agus kopo</span>
+                <img
+                    src="/pets/dog_walk.gif"
+                    class="pixelated face-left"
+                    alt="Dog"
+                    draggable="false"
+                />
+            </div>
+            <div class="pet-container group" data-speed="25" data-direction="1">
+                <div class="speech-bubble">Snip snap!</div>
+                <span class="pet-name">feris</span>
+                <img
+                    src="/pets/crab_walk.gif"
+                    class="pixelated face-right"
+                    alt="Crab"
+                    draggable="false"
+                />
+            </div>
+            <div
+                class="pet-container group"
+                data-speed="15"
+                data-direction="-1"
+            >
+                <div class="speech-bubble">...</div>
+                <span class="pet-name opacity-0">totoro</span>
+                <img
+                    src="/pets/totoro_walk.gif"
+                    class="pixelated face-left"
+                    alt="Totoro"
+                    draggable="false"
+                />
+            </div>
+            <div class="pet-container group" data-speed="35" data-direction="1">
+                <div class="speech-bubble">Ring-ding-ding!</div>
+                <span class="pet-name">yaya kopiling</span>
+                <img
+                    src="/pets/fox_walk.gif"
+                    class="pixelated face-right"
+                    alt="Fox"
+                    draggable="false"
+                />
+            </div>
+        </div>
+    </pet-terrarium>
+</div>
+
+<script>
+    import "../scripts/pet-terrarium";
+</script>

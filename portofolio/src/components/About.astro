@@ -1,0 +1,151 @@
+---
+import DinoGame from "./DinoGame.astro";
+import GitHubMatrix from "./GitHubMatrix.astro";
+---
+
+<section
+    id="about"
+    class="py-16 md:py-24 bg-[#FAFAFA] border-t-2 border-gray-950 relative overflow-hidden grid-blueprint-bg"
+>
+    <div class="max-w-[98%] xl:max-w-[1500px] 2xl:max-w-[1700px] mx-auto px-2 sm:px-6 relative z-10">
+        
+        <!-- MAIN POSTER FRAME CONTAINER -->
+        <div data-reveal class="neo-parallax-card relative w-full bg-white border-2 border-gray-950 shadow-[12px_12px_0px_0px_rgba(0,0,0,0.95)] p-5 sm:p-8 md:p-12 flex flex-col justify-between overflow-hidden noise-overlay">
+            
+            <!-- TOP HEADER GRID METADATA BAR -->
+            <div class="-mx-5 sm:-mx-8 md:-mx-12 px-5 sm:px-8 md:px-12 pb-3 sm:pb-6 border-b-2 border-gray-950 flex flex-row justify-between items-center gap-2 sm:gap-4 font-mono text-xs uppercase font-black text-gray-950">
+                <div class="flex items-center gap-2">
+                    <span class="bg-gray-950 text-white px-2 sm:px-2.5 py-1 border border-gray-950 font-mono text-[9.5px] sm:text-xs font-black shadow-[1.5px_1.5px_0px_0px_rgba(0,0,0,1)] sm:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                        SYSTEM // OVERVIEW
+                    </span>
+                </div>
+
+                <div class="text-right">
+                    <span class="bg-[#FACC15] text-gray-950 border border-gray-950 px-2 sm:px-2.5 py-1 text-[8px] sm:text-[9.5px] font-black uppercase shadow-[1.5px_1.5px_0px_0px_rgba(0,0,0,1)] sm:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rotate-1 inline-block">
+                        PROFILE & EXPERIMENTS
+                    </span>
+                </div>
+            </div>
+
+            <!-- COLLAGE: 1 TOP FULL BANNER + MIDDLE DINO & PINK CALLOUT + BOTTOM FULL GITHUB MATRIX -->
+            <div class="w-full my-6 sm:my-10 space-y-6 sm:space-y-8">
+                
+                <!-- TOP FULL-WIDTH HERO BIO BANNER -->
+                <div class="w-full bg-[#F4F2EB] border-2 border-gray-950 border-l-8 border-l-[#FACC15] rounded-3xl p-6 sm:p-10 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[14px_14px_0px_0px_rgba(0,0,0,1)] transition-all relative overflow-visible group">
+                    
+                    <!-- KANJUT CORNER FRAME TICKS -->
+                    <div class="corner-ticks z-10"></div>
+
+                    <div class="space-y-4 relative z-10">
+                        
+                        <!-- BIO BADGES -->
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <span class="bg-[#FACC15] text-gray-950 font-mono text-[9.5px] font-black uppercase px-3 py-1 border-[1.5px] border-gray-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-1">
+                                INFORMATION SYSTEM STUDENT
+                            </span>
+                        </div>
+
+                        <!-- TITLE -->
+                        <h3 class="font-oswald text-4xl sm:text-6xl md:text-7xl font-bold uppercase tracking-tight text-gray-950 leading-none">
+                            LUKMAN MUHAMMAD SUKANDAR <span class="font-mono text-xl sm:text-2xl text-gray-600 font-medium">lookman</span>
+                        </h3>
+                        
+                        <!-- PARAGRAPH BIO -->
+                        <p class="font-mono text-xs sm:text-sm text-gray-900 leading-relaxed font-medium max-w-4xl">
+                            Hi! I'm Lukman Muhammad Sukandar, also known as <strong class="bg-[#A7F3D0] border border-gray-950 px-1 text-gray-950 font-bold">lookman</strong> - mahasiswa Sistem Informasi di Universitas Singaperbangsa Karawang (UNSIKA). Saya passionate di bidang pengembangan software menggunakan <strong class="text-[#0038FF]">Python</strong>, <strong class="text-[#0038FF]">PHP &amp; Laravel</strong>, dan <strong class="text-[#FF5500]">Java</strong>. Di luar coding, saya suka bermain badminton, dengerin musik, dan nonton film - always learning, always growing!
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- MIDDLE ROW: DINO GAME (SPAN 5) + PINK CALLOUT CARD (SPAN 7 - MOVED UP) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+                    
+                    <!-- PANEL 1: CHROME DINO RUNNER (SPAN 5) -->
+                    <div class="lg:col-span-5 bg-white border-2 border-gray-950 border-t-4 border-t-[#22C55E] rounded-3xl p-5 sm:p-6 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[14px_14px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between border-b-2 border-gray-900 pb-2 mb-3">
+                                <span class="font-mono text-[9px] font-black text-gray-950 uppercase">
+                                    [01] DINO_GAME.EXE
+                                </span>
+                                <span class="font-mono text-[9px] font-bold text-gray-500">
+                                    AUTOPLAY
+                                </span>
+                            </div>
+                            <DinoGame />
+                        </div>
+                    </div>
+
+                    <!-- PANEL 2: PINK CALLOUT CARD (SPAN 7 - MOVED UP NEXT TO DINO) -->
+                    <div class="lg:col-span-7 bg-[#FF4D8D] text-white border-2 border-gray-950 rounded-3xl p-5 sm:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[14px_14px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all flex flex-col justify-between relative overflow-hidden">
+                        
+                        <!-- KANJUT CORNER FRAME TICKS -->
+                        <div class="corner-ticks z-10"></div>
+
+                        <div>
+                            <!-- TOP FLEX HEADER: STATUS BADGE + GROW WITH ME STICKER -->
+                            <div class="flex items-center justify-between flex-wrap gap-2 mb-2 z-10 relative">
+                                <span class="font-mono text-[9px] font-black uppercase tracking-widest bg-black text-white px-2.5 py-0.5 border border-white/30">
+                                    STATUS // OPPORTUNITIES
+                                </span>
+                                <span class="bg-[#FACC15] text-gray-950 font-oswald text-[9.5px] sm:text-xs font-black uppercase px-2.5 py-0.5 sm:px-3 sm:py-1 border-[1.5px] border-gray-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rotate-3">
+                                    GROW WITH ME!
+                                </span>
+                            </div>
+
+                            <h4 class="font-oswald text-2xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight mt-2 mb-3">
+                                OPEN FOR INTERNSHIPS & JUNIOR ROLES
+                            </h4>
+                            <p class="font-mono text-xs sm:text-sm text-white/90 leading-relaxed font-medium max-w-xl">
+                                Terbuka untuk magang, junior backend role, atau kolaborasi project open-source. Mari Kita berkembang bersama!
+                            </p>
+                        </div>
+
+                        <div class="mt-6 pt-4 border-t-2 border-white/30 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+                            <!-- RETRO Y2K GREEN STARBURST STICKER BADGE -->
+                            <div class="relative group cursor-pointer w-full sm:w-auto text-center">
+                              <div class="bg-[#22C55E] text-gray-950 border-2 border-gray-950 px-3.5 py-2 rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] -rotate-1 sm:-rotate-3 group-hover:rotate-0 transition-all flex items-center justify-center">
+                                <span class="font-oswald text-xs sm:text-sm font-black uppercase tracking-wider text-gray-950">
+                                  AVAILABLE FOR HIRE
+                                </span>
+                              </div>
+                            </div>
+
+                            <a
+                                href="#footer"
+                                class="font-mono text-xs sm:text-sm font-bold bg-white text-gray-950 border-2 border-gray-950 px-6 py-2.5 rounded-full shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-black hover:text-white transition-all inline-flex items-center justify-center gap-2 w-full sm:w-auto text-center"
+                            >
+                                <span>LET'S CONNECT</span>
+                                <span>[->]</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- BOTTOM FULL-WIDTH ROW: GITHUB SNAKE EATER MATRIX (SPAN 12 - FULL & EXPANDED) -->
+                <div class="w-full bg-white border-2 border-gray-950 border-t-4 border-t-[#0038FF] rounded-3xl p-4 sm:p-8 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[14px_14px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all">
+                    <div class="flex flex-wrap items-center justify-between gap-2 border-b-2 border-gray-900 pb-3 mb-4">
+                        <span class="font-mono text-[9.5px] sm:text-[10px] font-black text-gray-950 uppercase tracking-wider">
+                            [02] GITHUB_ACTIVITY_MATRIX
+                        </span>
+                        <span class="font-mono text-[9px] font-bold bg-[#0038FF] text-white px-2 py-0.5 border border-gray-950 shrink-0">
+                            52_WEEKS
+                        </span>
+                    </div>
+                    <GitHubMatrix />
+                </div>
+
+            </div>
+
+            <!-- BOTTOM METADATA BAR -->
+            <div class="-mx-5 sm:-mx-8 md:-mx-12 px-5 sm:px-8 md:px-12 pt-4 border-t-2 border-gray-950 flex flex-col sm:flex-row justify-between items-center gap-4 font-mono text-[10px] sm:text-xs font-black uppercase text-gray-950">
+                <span class="bg-gray-950 text-white px-2.5 py-0.5 border border-gray-950">002 // ABOUT SPEC</span>
+                <span>KARAWANG, INDONESIA</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
